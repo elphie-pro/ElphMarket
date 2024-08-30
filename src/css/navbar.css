@@ -3,8 +3,8 @@ body{
 }
 
 .nav{
-    width: 101%;
-    height: 10vh;
+    width: 100.1vw;
+    height: 8vh;
     background-color: #ff4a01;
     margin-top: -1%;
     margin-left: -0.6%;
@@ -34,7 +34,6 @@ body{
     position: absolute;
     color: #EDEDED;
     font-size: 160%;
-    margin-top: 0.3%;
     margin-left: 80%;
     text-decoration: none;
     font-weight: 800;
@@ -44,7 +43,6 @@ body{
     position: absolute;
     color: #EDEDED;
     font-size: 160%;
-    margin-top: 0.3%;
     margin-left: 88%;
     text-decoration: none;
     font-weight: 800;
@@ -54,8 +52,7 @@ body{
     position: absolute;
     color: #EDEDED;
     font-size: 160%;
-    margin-top: 0.3%;
-    margin-left: 93%;
+    margin-left: 92.5%;
     text-decoration: none;
     font-weight: 800;
  }
@@ -67,6 +64,6 @@ body{
  .copy {
     color: #ededed;
     font-weight: 800;
-    margin-top: 45.3%;
+    margin-top: 46%;
     margin-left: 88%;
  }

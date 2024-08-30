@@ -1,0 +1,27 @@
+body{
+    color: #ededed;
+    font-weight: 800;
+}
+
+.conatiner {
+    position: absolute;
+}
+
+.top{
+    position: absolute;
+    background-color: #ff4a01;
+    width: 100vw;
+    height: 20vh;
+    margin-left: -.5%;
+    border-top: #f06731 2px solid;
+    text-align: center;
+}
+
+.title{
+    font-size: 3.5rem;
+}
+
+.tit{
+    font-size: 1rem;
+    margin-top: -1.5%;
+}
