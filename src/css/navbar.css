@@ -23,13 +23,6 @@ body{
     color: #161616;
 }
 
-
-/* 
-.links{
-    position: absolute;
-    margin-left: 70%;
-} */
-
  .one{
     position: absolute;
     color: #EDEDED;
@@ -62,8 +55,10 @@ body{
  }
 
  .copy {
+    position: absolute;
     color: #ededed;
     font-weight: 800;
-    margin-top: 70%;
-    margin-left: 88%;
+    margin-top: 72%;
+    margin-left: 85%;
+    padding-bottom: 2%;
  }

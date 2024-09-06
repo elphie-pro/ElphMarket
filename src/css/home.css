@@ -12,7 +12,7 @@ body{
     background-color: #ff4a01;
     width: 100vw;
     height: 20vh;
-    margin-left: -.5%;
+    margin-left: -0.5%;
     border-top: #f06731 2px solid;
     text-align: center;
 }
@@ -74,12 +74,68 @@ body{
     font-size: 2.5rem;
 }
 
-.grid{
+.con{
     display: grid;
-    position: absolute;
     width: 25vw;
     height: 60vh;
-    background-color: #f06731;
-    margin-left: -177%;
+    background-color: #ff4a01;
+    position: absolute;
+    overflow-x: hidden;
+    margin-left: -190%;
+    position: absolute;
     border-radius: 20px;
+    padding: 0%;
+}
+
+.con2{
+    display: grid;
+    width: 25vw;
+    height: 60vh;
+    background-color: #ff4a01;
+    position: absolute;
+    overflow-x: hidden;
+    margin-left: -12%;
+    position: absolute;
+    border-radius: 20px;
+    padding: 0%;
+}
+
+.con3{
+    display: grid;
+    width: 25vw;
+    height: 60vh;
+    background-color: #ff4a01;
+    position: absolute;
+    overflow-x: hidden;
+    margin-left: 165%;
+    position: absolute;
+    border-radius: 20px;
+    padding: 0%;
+}
+
+.viewbtn{
+    position: absolute;
+    margin-top: 213%;
+    width: 20vw;
+    height: 4vh;
+    background-color: transparent;
+    border: 2px solid #161616;
+    color: white;
+    font-weight: 800;
+    padding-bottom: 1%;
+    cursor: pointer;
+    border: 2px solid #ff4a01;
+}
+
+.viewbtn:hover{
+    background-color: #ff4a01;
+    color: #161616;
+}
+
+.div{
+    width: 25vw;
+    height: .4vh;
+    background-color: #f06731;
+    position: absolute;
+    margin-top: 80%;
 }

@@ -21,9 +21,16 @@ const Homepage = () => {
       </div>
       <div className="bottom">
         <h2 className='trend'>Trending Products</h2>
-        <div className="grid">
-          
+        <div className="con">
+          <div className="div"></div>
         </div>
+        <div className="con2">
+        <div className="div"></div>
+        </div>
+        <div className="con3">
+        <div className="div"></div>
+        </div>
+        <button className='viewbtn'>View All Products</button>
       </div>
     </div>
     </>
