@@ -42,7 +42,9 @@ const Homepage = () => {
           <h3 className='ite'>Item 3</h3>
           <p className='desc'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex maxime impedit odit autem recusandae sequi minima dolores repudiandae velit corrupti et, praesentium ducimus, doloribus fuga! Sed aperiam recusandae enim temporibus.</p>
           <button className='view'>View Product</button></div>
-        <button className='viewbtn'>View All Products</button>
+        <button className='viewbtn' onClick={() => {
+          navigate('/products')
+        }}>View All Products</button>
       </div>
     </div>
     </>
