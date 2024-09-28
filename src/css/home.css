@@ -80,39 +80,15 @@ body{
     width: 25vw;
     height: 60vh;
     background-color: #ff4a01;
-    position: absolute;
+    /* position: absolute; */
     overflow-x: hidden;
     margin-left: -190%;
     position: absolute;
     border-radius: 20px;
     padding: 0%;
+    gap: 20px;
 }
 
-.con2{
-    display: grid;
-    width: 25vw;
-    height: 60vh;
-    background-color: #ff4a01;
-    position: absolute;
-    overflow-x: hidden;
-    margin-left: -12%;
-    position: absolute;
-    border-radius: 20px;
-    padding: 0%;
-}
-
-.con3{
-    display: grid;
-    width: 25vw;
-    height: 60vh;
-    background-color: #ff4a01;
-    position: absolute;
-    overflow-x: hidden;
-    margin-left: 165%;
-    position: absolute;
-    border-radius: 20px;
-    padding: 0%;
-}
 
 .viewbtn{
     position: absolute;
@@ -148,7 +124,7 @@ body{
 }
 
 .ite{
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     margin-top: -3%;
     margin-left: 1%;
 }

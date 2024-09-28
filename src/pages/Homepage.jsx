@@ -1,11 +1,32 @@
 import React from 'react'
 import '../css/home.css'
-import image from '../assets/meh.jpeg'
 import { useNavigate } from 'react-router-dom'
-import { Link } from 'react-router-dom'
+import Card from '../components/Card'
+import { useState, useEffect } from 'react'
 
 const Homepage = () => {
   const navigate = useNavigate()
+  const [img, setImg] = useState([])
+  const [loading, setLoading] = useState(false)
+
+  const fetchImg = async() => {
+    try{
+    setLoading(true)
+    const res = await fetch('https://jsonplaceholder.typicode.com/photos')
+    const data = await res.json()
+    setImg(data)
+  }
+  catch(e) {
+    console.log(e)
+  }
+  finally{
+    setLoading(false)
+  }
+}
+
+useEffect(() => {
+  fetchImg()
+}, [])
 
   return (
     <>
@@ -23,25 +44,19 @@ const Homepage = () => {
       </div>
       <div className="bottom">
         <h2 className='trend'>Trending Products</h2>
-        <div className="con">
-          <img src={image} className='img'/>
-          <div className="div"></div>
-          <h3 className='ite'>Item 1</h3>
-          <p className='desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eaque rem totam, ex sit, assumenda adipisci dolorem quae veniam quibusdam corporis harum? Voluptas necessitatibus soluta voluptatum id repudiandae perferendis perspiciatis.</p>
-          <button className='view'>View Product</button>
-        </div>
-        <div className="con2">
-        <img src={image} className='img'/>
-        <div className="div"></div>
-        <h3 className='ite'>Item 2</h3>
-        <p className='desc'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt iure hic praesentium tenetur, ex rerum voluptate iusto voluptatum nam, amet aperiam delectus laudantium deserunt, distinctio aliquam? Cumque sapiente fuga earum?</p>
-        <button className='view'>View Product</button></div>
-        <div className="con3">
-          <img src={image} className='img'/>
-          <div className="div"></div>
-          <h3 className='ite'>Item 3</h3>
-          <p className='desc'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex maxime impedit odit autem recusandae sequi minima dolores repudiandae velit corrupti et, praesentium ducimus, doloribus fuga! Sed aperiam recusandae enim temporibus.</p>
-          <button className='view'>View Product</button></div>
+
+        {
+          loading ? <p>Loading...</p> : (
+            <main>
+              <div>
+                {img.slice(0,3).map((im)=>{
+                  return(
+                   <Card key={im.id} img={im} />)   
+        })}
+              </div>
+            </main>
+          )
+        }    
         <button className='viewbtn' onClick={() => {
           navigate('/products')
         }}>View All Products</button>
